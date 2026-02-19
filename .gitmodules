@@ -1,0 +1,3 @@
+[submodule "src/jumiloader"]
+	path = src/jumiloader
+	url = https://github.com/williammitrefilho/jumiloader

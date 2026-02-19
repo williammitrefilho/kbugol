@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+	<head>
+		<title>KBugol</title>
+		<script type="text/javascript" src="scripts/kbugol.js"></script>
+	</head>
+	<body>
+		<script>
+			let kbugol = new KBugol()
+			kbugol.enterKeyPressed = (e) => {
+				console.log("why did you press enter?")
+			}
+			kbugol.listen()
+		</script>
+	</body>
+</html>
