@@ -21,7 +21,6 @@ class KBugol{
 	listen(){
 		this.oldListener = window.onkeydown
 		window.onkeydown = (e) => {
-			e.preventDefault()
 			this.findListenerFor(e)
 		}
 	}
