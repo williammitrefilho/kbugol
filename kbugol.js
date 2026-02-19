@@ -32,7 +32,7 @@ class KBugol{
 		for(var category in KBugol.codes){
 			let codes = KBugol.codes[category]
 			if(codes.includes(e.code))
-				return this[`${category}KeyPressed`]()
+				return this[`${category}KeyPressed`](e)
 		}
 	}
 }
