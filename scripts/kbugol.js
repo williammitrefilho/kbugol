@@ -19,9 +19,15 @@ class KBugol{
 	}
 	
 	listen(){
-		document.onkeydown = (e) => {
+		this.oldListener = window.onkeydown
+		window.onkeydown = (e) => {
+			e.preventDefault()
 			this.findListenerFor(e)
 		}
+	}
+	stopListening(){
+		
+		window.onkeydown = this.oldListener
 	}
 	findListenerFor(e){
 		for(var category in KBugol.codes){
