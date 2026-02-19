@@ -29,7 +29,7 @@ class KBugol{
 		window.onkeydown = this.oldListener
 	}
 	findListenerFor(e){
-		if(e.target.nodeName == "input")
+		if(e.target.nodeName == "INPUT")
 			return
 		for(var category in KBugol.codes){
 			let codes = KBugol.codes[category]
