@@ -22,8 +22,11 @@ class KBugol{
 	}
 
 	send(eventName){
-		if(KBugol.target)
+		console.log("sending", eventName)
+		if(KBugol.target){
+			console.log(KBugol.target[eventName])
 			KBugol.target[eventName]?.()
+		}
 		else
 			KBugol.sendToAll(eventName)
 	}
@@ -98,6 +101,9 @@ KBugol.keys = {
 	],
 	letter:[
 		"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",
+	],
+	esc:[
+		"Escape",
 	],
 }
 KBugol.listeners = {}
