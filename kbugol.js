@@ -23,7 +23,6 @@ class KBugol{
 
 	send(eventName){
 		if(KBugol.target){
-			console.log(KBugol.target[eventName])
 			KBugol.target[eventName]?.()
 		}
 		else
